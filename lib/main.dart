@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_helper/column_container_sizedbox.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,30 +10,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.stretch, //get full width
-        children: [
-          //fills the entire screen.
-          Container(
-            width: double.infinity, //get maximum width
-            height: 100,
-            margin: EdgeInsets.fromLTRB(30, 20, 50, 10),
-            color: Colors.green,
-          ),
-          SizedBox(
-            width: double.infinity,
-            height: 20,
-          ),
-          Container(
-            width: double.infinity, //get maximum width
-            height: 100,
-            margin: EdgeInsets.fromLTRB(30, 20, 50, 10),
-            color: Colors.green,
-          ),
-        ],
-      ),
+    return MaterialApp(
+      home: Screen1(),
+      initialRoute: 'screen1',
+      routes: {
+        'screen1': (context)=>Screen1(),
+      },
     );
   }
 }
