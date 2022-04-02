@@ -7,9 +7,14 @@ class Screen5 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Card(
-        child: Text('haiii'),
-        margin: EdgeInsets.all(20),
-        color: Colors.purple,
+        margin: EdgeInsets.symmetric(horizontal: 25),
+        child: ListTile(
+          dense: true,
+          leading: Icon(Icons.mail),
+          title: Text(
+            'jithuraj@email.com',
+          ),
+        ),
       ),
     );
   }

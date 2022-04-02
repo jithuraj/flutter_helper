@@ -3,7 +3,8 @@ import 'package:flutter_helper/column_container_sizedbox.dart';
 import 'package:flutter_helper/stack_positioned_material.dart';
 
 import 'align.dart';
-import 'card.dart';
+import 'card_listTile.dart';
+import 'divider.dart';
 import 'expandedWithFlex.dart';
 import 'intrincicWidth.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Screen1(),
-      initialRoute: 'screen6',
+      initialRoute: 'screen7',
       routes: {
         'screen1': (context) => Screen1(),
         'screen2': (context) => Screen2(),
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
         'screen4': (context) => Screen4(),
         'screen5': (context) => Screen5(),
         'screen6': (context) => Screen6(),
+        'screen7': (context) => Screen7(),
       },
     );
   }
