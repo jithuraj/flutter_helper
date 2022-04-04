@@ -17,17 +17,22 @@ class _Screen13State extends State<Screen13> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text('$_sliderVal'),
-          Slider(
-            min: 0,
-            activeColor: Colors.red,
-            inactiveColor: Colors.grey,
-            max: 100,
-            value: _sliderVal.toDouble(),
-            onChanged: (double val) {
-              setState(() {
-                _sliderVal = val.toInt();
-              });
-            },
+          SliderTheme(
+            data: SliderTheme.of(context).copyWith(
+              thumbColor: Colors.green,
+              thumbShape: RoundSliderThumbShape(enabledThumbRadius: 20),
+            ),
+            child: Slider(
+              min: 0,
+              inactiveColor: Colors.grey,
+              max: 100,
+              value: _sliderVal.toDouble(),
+              onChanged: (double val) {
+                setState(() {
+                  _sliderVal = val.toInt();
+                });
+              },
+            ),
           ),
         ],
       ),
