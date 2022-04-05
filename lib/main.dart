@@ -4,6 +4,7 @@ import 'package:flutter_helper/passingValuesBetweenScreens.dart';
 import 'package:flutter_helper/passingValuesBetweenScreens2.dart';
 import 'package:flutter_helper/slider.dart';
 import 'package:flutter_helper/stack_positioned_material.dart';
+import 'package:flutter_helper/switch.dart';
 import 'package:flutter_helper/widgetClass.dart';
 
 import 'align.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Screen1(),
-      initialRoute: 'screen14',
+      initialRoute: 'screen16',
       routes: {
         'screen1': (context) => Screen1(),
         'screen2': (context) => Screen2(),
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
         'screen13': (context) => Screen13(),
         'screen14': (context) => Screen14(),
         'screen15': (context) => Screen15(val: ''),
+        'screen16': (context) => Screen16(),
       },
     );
   }
