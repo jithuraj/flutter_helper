@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
 class SubWidget extends StatelessWidget {
-  Function(String) textFieldData;
+  Function(String) retunData;
 
-  SubWidget(this.textFieldData);
+  SubWidget(this.retunData);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: TextField(
         onChanged: (value) {
-          textFieldData(value);
+          retunData(value);
         },
       ),
     );
