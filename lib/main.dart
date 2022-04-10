@@ -7,6 +7,7 @@ import 'package:flutter_helper/stack_positioned_material.dart';
 import 'package:flutter_helper/widgetClass.dart';
 
 import 'align.dart';
+import 'bottom_navigation.dart';
 import 'callback/main_widget.dart';
 import 'card_listTile.dart';
 import 'divider.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
         'screen14': (context) => Screen14(),
         'screen15': (context) => Screen15(val: ''),
         'screen16': (context) => MainWidget(),
+        'screen17': (context) => Screen17(),
       },
     );
   }
